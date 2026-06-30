@@ -1,0 +1,34 @@
+.session-setup__picker {
+  margin-top: var(--space-bay);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.session-setup__group {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.session-setup__legend {
+  color: var(--color-slate);
+  margin-bottom: var(--space-md);
+  padding: 0;
+}
+
+.session-setup__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.session-setup__actions {
+  margin-top: var(--space-md);
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}

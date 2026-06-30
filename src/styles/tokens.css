@@ -1,0 +1,113 @@
+/* Design tokens — mirrored verbatim from letters/DESIGN.md (light theme).
+   Do not paraphrase values elsewhere; reference these vars instead. */
+
+:root {
+  /* ---- Colors ---- */
+  --color-primary: #070709;
+  --color-on-primary: #ffffff;
+  --color-accent: #070709;
+  --color-sky: #2597d0;
+  --color-sky-soft: #c9def0;
+  --color-hero-gradient-from: #7ea3c6;
+  --color-hero-gradient-to: #c9deeb;
+  --color-canvas: #ffffff;
+  --color-soft-cloud: #f5f5f7;
+  --color-hairline: #e4e5e7;
+  --color-ink: #070709;
+  --color-charcoal: #60606c;
+  --color-slate: #868c98;
+  --color-steel: #99a0ae;
+  --color-mute: #8b8b8b;
+  --color-on-sky-panel: #ffffff;
+  --color-caption-on-panel: #d9e3ec;
+
+  /* ---- Typography ---- */
+  --font-sans: 'Manrope', 'Open Runde', system-ui, -apple-system, sans-serif;
+
+  /* size / weight / line-height / tracking per token */
+  --type-display-hero-size: 76px; /* Open Runde 80px; -5% for Manrope substitute */
+  --type-display-hero-weight: 700;
+  --type-display-hero-lh: 0.9;
+  --type-display-hero-tracking: -3.4px;
+
+  --type-display-section-size: 42px; /* 44px -5% */
+  --type-display-section-weight: 700;
+  --type-display-section-lh: 1.1;
+  --type-display-section-tracking: -1.9px;
+
+  --type-heading-lg-size: 28px;
+  --type-heading-lg-weight: 600;
+  --type-heading-lg-lh: 1.2;
+  --type-heading-lg-tracking: -0.84px;
+
+  --type-heading-md-size: 20px;
+  --type-heading-md-weight: 600;
+  --type-heading-md-lh: 1.4;
+  --type-heading-md-tracking: -0.2px;
+
+  --type-heading-sm-size: 18px;
+  --type-heading-sm-weight: 600;
+  --type-heading-sm-lh: 1.4;
+  --type-heading-sm-tracking: -0.18px;
+
+  --type-body-lg-size: 17px;
+  --type-body-lg-weight: 400;
+  --type-body-lg-lh: 1.4;
+  --type-body-lg-tracking: -0.17px;
+
+  --type-body-md-size: 16px;
+  --type-body-md-weight: 400;
+  --type-body-md-lh: 1.49;
+  --type-body-md-tracking: -0.16px;
+
+  --type-body-md-bold-weight: 600;
+
+  --type-caption-size: 14px;
+  --type-caption-weight: 500;
+  --type-caption-lh: 1.5;
+  --type-caption-tracking: -0.14px;
+
+  --type-micro-size: 12px;
+  --type-micro-weight: 500;
+  --type-micro-lh: 1.2;
+  --type-micro-tracking: -0.12px;
+
+  --type-eyebrow-size: 11px;
+  --type-eyebrow-weight: 600;
+  --type-eyebrow-lh: 1.09;
+  --type-eyebrow-tracking: 0.22px;
+
+  /* ---- Radius ---- */
+  --rounded-xs: 6px;
+  --rounded-sm: 16px;
+  --rounded-md: 18px;
+  --rounded-lg: 24px;
+  --rounded-xl: 32px;
+  --rounded-xxl: 48px;
+  --rounded-pill: 100px;
+  --rounded-full: 9999px;
+
+  /* ---- Spacing ---- */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 40px;
+  --space-section: 64px;
+  --space-bay: 96px;
+
+  /* ---- Elevation (subtraction, not addition) ---- */
+  --shadow-1: rgba(228, 229, 231, 0.24) 0px 1px 2px 0px;
+  --shadow-2: rgba(36, 36, 40, 0.1) 0px 1px 2px, rgba(36, 36, 40, 0.09) 0px 3px 3px,
+    rgba(36, 36, 40, 0.05) 0px 6px 4px;
+  --shadow-3: rgba(0, 0, 0, 0.25) 0px 1px 2px 0px;
+
+  /* ---- Brand gradient (hero/CTA bays) ---- */
+  --hero-gradient: linear-gradient(
+    180deg,
+    var(--color-hero-gradient-from) 0%,
+    var(--color-hero-gradient-to) 100%
+  );
+}

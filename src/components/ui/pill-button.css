@@ -1,0 +1,65 @@
+.pill-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  height: 48px;
+  padding: 0 var(--space-lg);
+  border: none;
+  border-radius: var(--rounded-pill);
+  font-size: var(--type-body-md-size);
+  font-weight: var(--type-body-md-bold-weight);
+  letter-spacing: var(--type-body-md-tracking);
+  transition:
+    transform 0.08s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+  white-space: nowrap;
+}
+
+.pill-button:active {
+  transform: translateY(1px);
+}
+
+/* primary — the single high-contrast surface; use scarcely. */
+.pill-button--primary {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  box-shadow: var(--shadow-3);
+}
+.pill-button--primary:hover {
+  box-shadow:
+    rgba(0, 0, 0, 0.28) 0px 2px 6px 0px;
+}
+
+/* secondary — white pill with dark text. */
+.pill-button--secondary {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  box-shadow: var(--shadow-1);
+}
+.pill-button--secondary:hover {
+  background: var(--color-soft-cloud);
+}
+
+/* ghost — soft-cloud pill, low emphasis. */
+.pill-button--ghost {
+  background: var(--color-soft-cloud);
+  color: var(--color-ink);
+}
+.pill-button--ghost:hover {
+  background: var(--color-hairline);
+}
+
+/* disabled */
+.pill-button--disabled {
+  background: var(--color-soft-cloud);
+  color: var(--color-steel);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.pill-button--sm {
+  height: 40px;
+  padding: 0 var(--space-md);
+}

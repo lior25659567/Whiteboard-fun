@@ -1,0 +1,29 @@
+.sketch-preview {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--rounded-md);
+  background: var(--color-canvas);
+}
+
+/* Handwriting labels for the lo-fi sketch feel. */
+.sketch-preview .sk-text {
+  font-family: 'Caveat', 'Comic Sans MS', cursive;
+  font-weight: 600;
+  font-size: 16px;
+  fill: var(--color-ink);
+}
+
+.sketch-preview .sk-band {
+  font-size: 15px;
+  fill: #6a7180;
+}
+
+.sketch-preview .sk-kpi {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.sketch-preview .sk-on-dark {
+  fill: #ffffff;
+}

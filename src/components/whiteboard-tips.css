@@ -1,0 +1,66 @@
+.wtips {
+  padding: 0;
+  overflow: hidden;
+}
+
+.wtips__head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-lg);
+  border: none;
+  background: transparent;
+}
+
+.wtips__label {
+  color: var(--color-slate);
+}
+
+.wtips__chevron {
+  color: var(--color-slate);
+  font-size: var(--type-caption-size);
+}
+
+.wtips__body {
+  padding: 0 var(--space-lg) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.wtips__tip {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.wtips__tip-title {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+.wtips__tip-detail {
+  color: var(--color-charcoal);
+}
+
+.wtips__plan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin: var(--space-xxs) 0;
+}
+
+.wtips__chip {
+  padding: var(--space-xxs) var(--space-sm);
+  border-radius: var(--rounded-pill);
+  background: var(--color-sky-soft);
+  color: var(--color-ink);
+  font-size: var(--type-micro-size);
+  font-weight: 600;
+}
+
+.wtips__source {
+  color: var(--color-slate);
+  margin: var(--space-xxs) 0 0;
+}

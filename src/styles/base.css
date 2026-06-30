@@ -1,0 +1,116 @@
+/* Reset + base defaults. Open Runde -> Manrope substitute per DESIGN.md. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--type-body-md-size);
+  line-height: var(--type-body-md-lh);
+  letter-spacing: var(--type-body-md-tracking);
+  color: var(--color-ink);
+  background: var(--color-canvas);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+/* ---- Shared type helpers (reference tokens) ---- */
+.t-display-hero {
+  font-size: var(--type-display-hero-size);
+  font-weight: var(--type-display-hero-weight);
+  line-height: var(--type-display-hero-lh);
+  letter-spacing: var(--type-display-hero-tracking);
+}
+.t-display-section {
+  font-size: var(--type-display-section-size);
+  font-weight: var(--type-display-section-weight);
+  line-height: var(--type-display-section-lh);
+  letter-spacing: var(--type-display-section-tracking);
+}
+.t-heading-lg {
+  font-size: var(--type-heading-lg-size);
+  font-weight: var(--type-heading-lg-weight);
+  line-height: var(--type-heading-lg-lh);
+  letter-spacing: var(--type-heading-lg-tracking);
+}
+.t-heading-md {
+  font-size: var(--type-heading-md-size);
+  font-weight: var(--type-heading-md-weight);
+  line-height: var(--type-heading-md-lh);
+  letter-spacing: var(--type-heading-md-tracking);
+}
+.t-heading-sm {
+  font-size: var(--type-heading-sm-size);
+  font-weight: var(--type-heading-sm-weight);
+  line-height: var(--type-heading-sm-lh);
+  letter-spacing: var(--type-heading-sm-tracking);
+}
+.t-body-lg {
+  font-size: var(--type-body-lg-size);
+  font-weight: var(--type-body-lg-weight);
+  line-height: var(--type-body-lg-lh);
+  letter-spacing: var(--type-body-lg-tracking);
+}
+.t-body-md {
+  font-size: var(--type-body-md-size);
+  font-weight: var(--type-body-md-weight);
+  line-height: var(--type-body-md-lh);
+  letter-spacing: var(--type-body-md-tracking);
+}
+.t-caption {
+  font-size: var(--type-caption-size);
+  font-weight: var(--type-caption-weight);
+  line-height: var(--type-caption-lh);
+  letter-spacing: var(--type-caption-tracking);
+}
+.t-micro {
+  font-size: var(--type-micro-size);
+  font-weight: var(--type-micro-weight);
+  line-height: var(--type-micro-lh);
+  letter-spacing: var(--type-micro-tracking);
+}
+.t-eyebrow {
+  font-size: var(--type-eyebrow-size);
+  font-weight: var(--type-eyebrow-weight);
+  line-height: var(--type-eyebrow-lh);
+  letter-spacing: var(--type-eyebrow-tracking);
+  text-transform: uppercase;
+}
+
+/* Sky inline accent — used sparingly for brand emphasis / active marks. */
+.accent-sky {
+  color: var(--color-sky);
+}

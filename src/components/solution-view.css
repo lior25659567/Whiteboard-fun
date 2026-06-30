@@ -1,0 +1,155 @@
+.solution {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.solution__level-note {
+  margin: 0;
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-sky-soft);
+  border-radius: var(--rounded-sm);
+  color: var(--color-ink);
+}
+
+/* Labels-only mode (stretch): tighten the spacing since there's no detail text. */
+.solution__steps--labels {
+  gap: var(--space-xs);
+}
+
+/* The clarify step, shown as concrete structured parts. */
+.clarify {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-xxs);
+}
+
+.clarify__intro {
+  color: var(--color-charcoal);
+}
+
+.clarify__part {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-left: var(--space-sm);
+  border-left: 2px solid var(--color-sky-soft);
+}
+
+.clarify__heading {
+  color: var(--color-sky);
+}
+
+.clarify__text {
+  color: var(--color-charcoal);
+}
+
+.clarify__who {
+  color: var(--color-slate);
+  font-style: italic;
+}
+
+.clarify__list {
+  margin: var(--space-xxs) 0 0;
+  padding-left: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxs);
+  color: var(--color-charcoal);
+}
+
+.solution__reveal {
+  align-self: flex-start;
+  border: none;
+  background: transparent;
+  color: var(--color-sky);
+  padding: 0;
+  font-weight: 600;
+}
+.solution__reveal:hover {
+  text-decoration: underline;
+}
+
+.solution__label {
+  margin-bottom: var(--space-sm);
+}
+
+.solution__steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.solution__step {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: flex-start;
+}
+
+.solution__num {
+  flex: 0 0 22px;
+  height: 22px;
+  border-radius: var(--rounded-full);
+  background: var(--color-sky);
+  color: var(--color-on-sky-panel);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--type-micro-size);
+  font-weight: 700;
+  margin-top: 1px;
+}
+
+.solution__step-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.solution__step-title {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+.solution__step-detail {
+  color: var(--color-charcoal);
+}
+
+.solution__sketches {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.solution__sketch {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.solution__sketch-caption {
+  margin-top: var(--space-xs);
+  color: var(--color-slate);
+  text-align: center;
+}
+
+.solution__insert {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xxs);
+  margin: var(--space-xs) auto 0;
+  padding: var(--space-xxs) var(--space-sm);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--rounded-pill);
+  background: var(--color-canvas);
+  color: var(--color-sky);
+  font-weight: 600;
+}
+.solution__insert:hover {
+  background: var(--color-sky-soft);
+  border-color: var(--color-sky-soft);
+  color: var(--color-ink);
+}
